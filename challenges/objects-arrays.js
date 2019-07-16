@@ -10,7 +10,8 @@ class dinosaur {
   constructor(attributes) {
     this.name = attributes.name,
     this.diet = attributes.diet,
-    this.weight = attributes.length
+    this.weight = attributes.weight
+    this.length = attributes.length
     this.period = attributes.period
   }
 }
@@ -179,7 +180,7 @@ The zoos need to know their total animal population across the United States.  F
 */
 const populationTotal = zooAnimals.reduce(function(totalAnimals, item){
   return totalAnimals + item.population;
-})
+},0)
 console.log(populationTotal);
 
 
